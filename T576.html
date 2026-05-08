@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线证书验真系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        /* 顶部导航栏 */
+        .header {
+            background-color: #4682B4;
+            color: white;
+            padding: 18px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .menu-icon {
+            width: 30px;
+            height: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .menu-icon span {
+            background-color: #888;
+            height: 3px;
+            border-radius: 2px;
+        }
+        /* 提示文字 */
+        .tip-text {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin: 30px 10px 20px;
+        }
+        /* 表格容器 */
+        .table-container {
+            margin: 0 10px 30px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color: white;
+        }
+        .table-header {
+            background-color: #f0f0f0;
+            padding: 16px;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .data-table tr {
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table tr:last-child {
+            border-bottom: none;
+        }
+        .data-table td {
+            padding: 18px 16px;
+            font-size: 20px;
+        }
+        .data-table td:first-child {
+            width: 35%;
+            color: #333;
+            font-weight: 500;
+        }
+        .data-table td:last-child {
+            color: #333;
+        }
+        .english-text {
+            font-size: 16px;
+            color: #666;
+            margin-top: 4px;
+        }
+        /* 响应式适配 */
+        @media (max-width: 600px) {
+            .header {
+                font-size: 18px;
+                padding: 14px 12px;
+            }
+            .tip-text {
+                font-size: 20px;
+                margin: 20px 8px 15px;
+            }
+            .data-table td {
+                padding: 14px 12px;
+                font-size: 17px;
+            }
+            .english-text {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span>📄 在线证书验真系统</span>
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="tip-text">请校对证书上的信息是否与以下内容一致</div>
+
+    <div class="table-container">
+        <div class="table-header">
+            <div class="menu-icon" style="width:24px;height:18px;">
+                <span style="background-color:#666;"></span>
+                <span style="background-color:#666;"></span>
+                <span style="background-color:#666;"></span>
+            </div>
+        </div>
+        <table class="data-table">
+            <tr>
+                <td>
+                    证书编号:<br>
+                    <span class="english-text">Certificate No.</span>
+                </td>
+                <td>KG260117071</td>
+            </tr>
+            <tr>
+                <td>
+                    证书单位:<br>
+                    <span class="english-text">Client.</span>
+                </td>
+                <td>苏州尚准电子科技有限公司</td>
+            </tr>
+            <tr>
+                <td>
+                    仪器名称:<br>
+                    <span class="english-text">Description.</span>
+                </td>
+                <td>螺纹规</td>
+            </tr>
+            <tr>
+                <td>
+                    型号规格:<br>
+                    <span class="english-text">Model/Type.</span>
+                </td>
+                <td>M2.5 6H</td>
+            </tr>
+            <tr>
+                <td>
+                    出厂编号:<br>
+                    <span class="english-text">Serial No.</span>
+                </td>
+                <td>/</td>
+            </tr>
+            <tr>
+                <td>
+                    管理编号:<br>
+                    <span class="english-text">Asset No.</span>
+                </td>
+                <td>T576</td>
+            </tr>
+            <tr>
+                <td>
+                    校准日期:<br>
+                    <span class="english-text">Cal.Date.</span>
+                </td>
+                <td>2026-01-17</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
