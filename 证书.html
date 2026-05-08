@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 关键：手机自适应 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>证书查询结果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #ffffff;
+            padding: 20px;
+            /* 电脑端居中显示 */
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 页面容器：手机全屏，电脑最大600px */
+        .page {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* 标题栏：左边黑线 + 文字 */
+        .title-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .black-line {
+            width: 6px;
+            height: 32px;
+            background: #000;
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        .main-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 16px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        /* 左边蓝色标签 */
+        .label {
+            background-color: #2E4A9E;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            width: 35%;
+        }
+
+        /* 右边内容 */
+        .content {
+            background-color: #F5F5F5;
+            color: #333;
+            text-align: center;
+        }
+
+        /* 行间距 */
+        tr {
+            height: 55px;
+        }
+
+        /* 底部技术支持 */
+        .footer {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 16px;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="title-box">
+            <div class="black-line"></div>
+            <div class="main-title">证书查询结果</div>
+        </div>
+
+        <div class="sub-title">查询结果如下：</div>
+
+        <table>
+            <tr>
+                <td class="label">证书编号</td>
+                <td class="content">802977950-001</td>
+            </tr>
+            <tr>
+                <td class="label">单位名称</td>
+                <td class="content">苏州尚准电子科技有限公司</td>
+            </tr>
+            <tr>
+                <td class="label">器具名称</td>
+                <td class="content">螺纹塞规</td>
+            </tr>
+            <tr>
+                <td class="label">型号规格</td>
+                <td class="content">000-120UNS-2B</td>
+            </tr>
+            <tr>
+                <td class="label">出厂编号</td>
+                <td class="content">T657</td>
+            </tr>
+            <tr>
+                <td class="label">制造厂商</td>
+                <td class="content">蜀川量具</td>
+            </tr>
+            <tr>
+                <td class="label">检校日期</td>
+                <td class="content">2026-04-17</td>
+            </tr>
+            <tr>
+                <td class="label">检校单位</td>
+                <td class="content">苏州市计量测试院有限公司</td>
+            </tr>
+        </table>
+
+        <div class="footer">技术支持：南京明德软件有限公司</div>
+    </div>
+</body>
+</html>
